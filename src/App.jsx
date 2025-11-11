@@ -140,7 +140,7 @@ function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-24 lg:h-48">
             <div className="flex items-center">
-              <img src={tgaLogo} alt="The Green Agents" className="h-20 lg:h-40 w-auto" />
+              <img src={tgaLogo} alt="The Green Agents" className="w-48 lg:w-80 h-auto" />
             </div>
             
             {/* Desktop Navigation */}
@@ -288,21 +288,21 @@ function HomePage() {
                 <Shield className="h-8 w-8 text-teal-400" />
               </div>
               <h3 className="text-xl font-semibold text-slate-700 mb-2">Fully Managed</h3>
-              <p className="text-slate-300">We deploy, monitor, and optimize your AI agents so you don't have to. From initial setup to ongoing performance tuning, our team handles all the technical complexity.</p>
+              <p className="text-slate-600">We deploy, monitor, and optimize your AI agents so you don't have to. From initial setup to ongoing performance tuning, our team handles all the technical complexity.</p>
             </motion.div>
             <motion.div variants={fadeInUp} className="text-center">
               <div className="bg-teal-600/20 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                 <Target className="h-8 w-8 text-teal-400" />
               </div>
               <h3 className="text-xl font-semibold text-slate-700 mb-2">Outcome-Owned</h3>
-              <p className="text-slate-300">We tie our agents' performance directly to the KPIs that matter to your business. Whether it's response times, lead conversion, or cost savings, we measure success the same way you do.</p>
+              <p className="text-slate-600">We tie our agents' performance directly to the KPIs that matter to your business. Whether it's response times, lead conversion, or cost savings, we measure success the same way you do.</p>
             </motion.div>
             <motion.div variants={fadeInUp} className="text-center">
               <div className="bg-teal-600/20 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                 <Zap className="h-8 w-8 text-teal-400" />
               </div>
               <h3 className="text-xl font-semibold text-slate-700 mb-2">No Tech Skills Needed</h3>
-              <p className="text-slate-300">We translate your business needs into intelligent automation. Simply tell us what tasks are eating up your time, and we'll design agents that handle them exactly how you want.</p>
+              <p className="text-slate-600">We translate your business needs into intelligent automation. Simply tell us what tasks are eating up your time, and we'll design agents that handle them exactly how you want.</p>
             </motion.div>
           </motion.div>
         </div>
@@ -697,7 +697,7 @@ function HomePage() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Start Risk-Free with Our 14-Day Pilot</h2>
-            <p className="text-xl text-teal-100 mb-8 leading-relaxed">
+            <p className="text-xl text-white mb-8 leading-relaxed">
               Experience the power of managed AI agents with no long-term commitment. We'll identify your biggest time drain, 
               deploy a custom agent, and show you measurable results within two weeks. If you're not completely satisfied 
               with the time savings and quality, there's no obligation to continue.
@@ -915,7 +915,7 @@ function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-4 md:mb-0">
-              <img src={tgaLogo} alt="The Green Agents" className="h-40 lg:h-56 w-auto mr-8" />
+              <img src={tgaLogo} alt="The Green Agents" className="w-64 lg:w-96 h-auto mr-8" />
               <p className="text-slate-600">© 2025 The Green Agents Ltd. All rights reserved.</p>
             </div>
             <div className="flex space-x-6">
