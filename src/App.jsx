@@ -10,7 +10,7 @@ import {
   Globe, Rocket, Brain, Network
 } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
-import tgaLogo from './assets/TheGreenAgentsLogoWebsite.png'
+import tgaLogo from './assets/TheGreenAgents1.png'
 import emailAutomation from './assets/email-automation.png'
 import marketingAutomation from './assets/marketing-automation.webp'
 import customerService from './assets/customer-service.png'
@@ -136,7 +136,7 @@ function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
       {/* Navigation */}
-      <nav className="bg-black border-b border-slate-800 sticky top-0 z-50">
+      <nav className="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-24 lg:h-48">
             <div className="flex items-center">
@@ -146,11 +146,11 @@ function HomePage() {
             {/* Desktop Navigation */}
             <div className="hidden lg:block">
               <div className="ml-10 flex items-baseline space-x-8">
-                <button onClick={() => scrollToSection('how-it-works')} className="text-white hover:text-green-400 px-3 py-2 text-sm font-medium transition-colors">How It Works</button>
-                <button onClick={() => scrollToSection('products')} className="text-white hover:text-green-400 px-3 py-2 text-sm font-medium transition-colors">Our Products</button>
-                <button onClick={() => scrollToSection('services')} className="text-white hover:text-green-400 px-3 py-2 text-sm font-medium transition-colors">Services</button>
-                <button onClick={() => scrollToSection('why-us')} className="text-white hover:text-green-400 px-3 py-2 text-sm font-medium transition-colors">Why Choose Us</button>
-                <button onClick={() => scrollToSection('ready-to-get-started')} className="text-white hover:text-green-400 px-3 py-2 text-sm font-medium transition-colors">Contact</button>
+                <button onClick={() => scrollToSection('how-it-works')} className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors">How It Works</button>
+                <button onClick={() => scrollToSection('products')} className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors">Our Products</button>
+                <button onClick={() => scrollToSection('services')} className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors">Services</button>
+                <button onClick={() => scrollToSection('why-us')} className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors">Why Choose Us</button>
+                <button onClick={() => scrollToSection('ready-to-get-started')} className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors">Contact</button>
               </div>
             </div>
             
@@ -158,13 +158,13 @@ function HomePage() {
             <div className="hidden lg:flex items-center space-x-4">
               <Button 
                 variant="outline" 
-                className="text-white border-white hover:bg-white hover:text-black bg-transparent"
+                className="text-teal-600 border-teal-600 hover:bg-teal-600 hover:text-white bg-transparent"
                 onClick={() => scrollToSection('how-it-works')}
               >
                 See How It Works
               </Button>
               <Button 
-                className="bg-green-600 hover:bg-green-700 text-white"
+                className="bg-teal-600 hover:bg-teal-700 text-white"
                 onClick={() => scrollToSection('ready-to-get-started')}
               >
                 Start Your 14-Day Pilot
@@ -177,7 +177,7 @@ function HomePage() {
                 variant="ghost"
                 size="sm"
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="text-white hover:text-green-400"
+                className="text-slate-700 hover:text-teal-600"
               >
                 {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </Button>
@@ -192,24 +192,24 @@ function HomePage() {
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              className="lg:hidden bg-black border-t border-slate-800"
+              className="lg:hidden bg-white border-t border-slate-200"
             >
               <div className="px-4 py-4 space-y-3">
-                <button onClick={() => scrollToSection('how-it-works')} className="block w-full text-left text-white hover:text-green-400 py-2 text-sm font-medium transition-colors">How It Works</button>
-                <button onClick={() => scrollToSection('products')} className="block w-full text-left text-white hover:text-green-400 py-2 text-sm font-medium transition-colors">Our Products</button>
-                <button onClick={() => scrollToSection('services')} className="block w-full text-left text-white hover:text-green-400 py-2 text-sm font-medium transition-colors">Services</button>
-                <button onClick={() => scrollToSection('why-us')} className="block w-full text-left text-white hover:text-green-400 py-2 text-sm font-medium transition-colors">Why Choose Us</button>
-                <button onClick={() => scrollToSection('ready-to-get-started')} className="block w-full text-left text-white hover:text-green-400 py-2 text-sm font-medium transition-colors">Contact</button>
-                <div className="pt-4 border-t border-slate-700 space-y-3">
+                <button onClick={() => scrollToSection('how-it-works')} className="block w-full text-left text-slate-700 hover:text-teal-600 py-2 text-sm font-medium transition-colors">How It Works</button>
+                <button onClick={() => scrollToSection('products')} className="block w-full text-left text-slate-700 hover:text-teal-600 py-2 text-sm font-medium transition-colors">Our Products</button>
+                <button onClick={() => scrollToSection('services')} className="block w-full text-left text-slate-700 hover:text-teal-600 py-2 text-sm font-medium transition-colors">Services</button>
+                <button onClick={() => scrollToSection('why-us')} className="block w-full text-left text-slate-700 hover:text-teal-600 py-2 text-sm font-medium transition-colors">Why Choose Us</button>
+                <button onClick={() => scrollToSection('ready-to-get-started')} className="block w-full text-left text-slate-700 hover:text-teal-600 py-2 text-sm font-medium transition-colors">Contact</button>
+                <div className="pt-4 border-t border-slate-200 space-y-3">
                   <Button 
                     variant="outline" 
-                    className="w-full text-white border-white hover:bg-white hover:text-black bg-transparent"
+                    className="w-full text-teal-600 border-teal-600 hover:bg-teal-600 hover:text-white bg-transparent"
                     onClick={() => scrollToSection('how-it-works')}
                   >
                     See How It Works
                   </Button>
                   <Button 
-                    className="w-full bg-green-600 hover:bg-green-700 text-white"
+                    className="w-full bg-teal-600 hover:bg-teal-700 text-white"
                     onClick={() => scrollToSection('ready-to-get-started')}
                   >
                     Start Your 14-Day Pilot
@@ -222,9 +222,9 @@ function HomePage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-green-900">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0 bg-gradient-to-br from-green-500/5 to-transparent"></div>
+      <section className="relative overflow-hidden bg-white">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 bg-gradient-to-br from-teal-500/10 to-transparent"></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <motion.div 
@@ -234,16 +234,16 @@ function HomePage() {
             transition={{ duration: 0.8 }}
           >
             <motion.h1 
-              className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6"
+              className="text-4xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-6"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               We run the work.{' '}
-              <span className="text-green-400">You run the business.</span>
+              <span className="text-teal-600">You run the business.</span>
             </motion.h1>
             <motion.p 
-              className="text-xl md:text-2xl text-slate-300 mb-8 max-w-4xl mx-auto leading-relaxed"
+              className="text-xl md:text-2xl text-slate-600 mb-8 max-w-4xl mx-auto leading-relaxed"
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -259,7 +259,7 @@ function HomePage() {
             >
               <Button 
                 size="lg" 
-                className="bg-green-600 hover:bg-green-700 text-white text-lg px-8 py-4 h-auto"
+                className="bg-teal-600 hover:bg-teal-700 text-white text-lg px-8 py-4 h-auto"
                 onClick={() => scrollToSection('ready-to-get-started')}
               >
                 Start Your 14-Day Pilot
@@ -268,7 +268,7 @@ function HomePage() {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="text-white border-white hover:bg-white hover:text-slate-900 text-lg px-8 py-4 h-auto bg-transparent"
+                className="text-teal-600 border-teal-600 hover:bg-teal-600 hover:text-white text-lg px-8 py-4 h-auto bg-transparent"
                 onClick={() => scrollToSection('how-it-works')}
               >
                 See How It Works
@@ -284,24 +284,24 @@ function HomePage() {
             animate="animate"
           >
             <motion.div variants={fadeInUp} className="text-center">
-              <div className="bg-green-600/20 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                <Shield className="h-8 w-8 text-green-400" />
+              <div className="bg-teal-600/20 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                <Shield className="h-8 w-8 text-teal-400" />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-2">Fully Managed</h3>
+              <h3 className="text-xl font-semibold text-slate-700 mb-2">Fully Managed</h3>
               <p className="text-slate-300">We deploy, monitor, and optimize your AI agents so you don't have to. From initial setup to ongoing performance tuning, our team handles all the technical complexity.</p>
             </motion.div>
             <motion.div variants={fadeInUp} className="text-center">
-              <div className="bg-green-600/20 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                <Target className="h-8 w-8 text-green-400" />
+              <div className="bg-teal-600/20 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                <Target className="h-8 w-8 text-teal-400" />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-2">Outcome-Owned</h3>
+              <h3 className="text-xl font-semibold text-slate-700 mb-2">Outcome-Owned</h3>
               <p className="text-slate-300">We tie our agents' performance directly to the KPIs that matter to your business. Whether it's response times, lead conversion, or cost savings, we measure success the same way you do.</p>
             </motion.div>
             <motion.div variants={fadeInUp} className="text-center">
-              <div className="bg-green-600/20 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                <Zap className="h-8 w-8 text-green-400" />
+              <div className="bg-teal-600/20 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                <Zap className="h-8 w-8 text-teal-400" />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-2">No Tech Skills Needed</h3>
+              <h3 className="text-xl font-semibold text-slate-700 mb-2">No Tech Skills Needed</h3>
               <p className="text-slate-300">We translate your business needs into intelligent automation. Simply tell us what tasks are eating up your time, and we'll design agents that handle them exactly how you want.</p>
             </motion.div>
           </motion.div>
@@ -334,8 +334,8 @@ function HomePage() {
             >
               <Card className="h-full border-2 hover:border-green-200 transition-colors">
                 <CardHeader>
-                  <div className="bg-green-100 rounded-full p-3 w-12 h-12 flex items-center justify-center mb-4">
-                    <span className="text-green-600 font-bold text-lg">1</span>
+                  <div className="bg-teal-100 rounded-full p-3 w-12 h-12 flex items-center justify-center mb-4">
+                    <span className="text-teal-600 font-bold text-lg">1</span>
                   </div>
                   <CardTitle className="text-2xl">Discovery Call</CardTitle>
                   <CardDescription className="text-slate-500">Week 1</CardDescription>
@@ -349,7 +349,7 @@ function HomePage() {
                 </CardContent>
               </Card>
               <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2">
-                <ArrowRight className="h-8 w-8 text-green-400" />
+                <ArrowRight className="h-8 w-8 text-teal-400" />
               </div>
             </motion.div>
 
@@ -362,8 +362,8 @@ function HomePage() {
             >
               <Card className="h-full border-2 hover:border-green-200 transition-colors">
                 <CardHeader>
-                  <div className="bg-green-100 rounded-full p-3 w-12 h-12 flex items-center justify-center mb-4">
-                    <span className="text-green-600 font-bold text-lg">2</span>
+                  <div className="bg-teal-100 rounded-full p-3 w-12 h-12 flex items-center justify-center mb-4">
+                    <span className="text-teal-600 font-bold text-lg">2</span>
                   </div>
                   <CardTitle className="text-2xl">Agent Setup</CardTitle>
                   <CardDescription className="text-slate-500">Week 2</CardDescription>
@@ -377,7 +377,7 @@ function HomePage() {
                 </CardContent>
               </Card>
               <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2">
-                <ArrowRight className="h-8 w-8 text-green-400" />
+                <ArrowRight className="h-8 w-8 text-teal-400" />
               </div>
             </motion.div>
 
@@ -389,8 +389,8 @@ function HomePage() {
             >
               <Card className="h-full border-2 hover:border-green-200 transition-colors">
                 <CardHeader>
-                  <div className="bg-green-100 rounded-full p-3 w-12 h-12 flex items-center justify-center mb-4">
-                    <span className="text-green-600 font-bold text-lg">3</span>
+                  <div className="bg-teal-100 rounded-full p-3 w-12 h-12 flex items-center justify-center mb-4">
+                    <span className="text-teal-600 font-bold text-lg">3</span>
                   </div>
                   <CardTitle className="text-2xl">Managed Delivery</CardTitle>
                   <CardDescription className="text-slate-500">Ongoing</CardDescription>
@@ -474,13 +474,13 @@ function HomePage() {
                     <ul className="space-y-2">
                       {product.features.map((feature, featureIndex) => (
                         <li key={featureIndex} className="flex items-center text-sm text-slate-600">
-                          <CheckCircle className="h-4 w-4 text-green-600 mr-2 flex-shrink-0" />
+                          <CheckCircle className="h-4 w-4 text-teal-600 mr-2 flex-shrink-0" />
                           {feature}
                         </li>
                       ))}
                     </ul>
                     <Link to={`/${product.title.toLowerCase().replace(/\s+/g, '-')}`}>
-                      <Button className="w-full mt-4 bg-green-600 hover:bg-green-700 text-white">
+                      <Button className="w-full mt-4 bg-teal-600 hover:bg-teal-700 text-white">
                         Learn More
                       </Button>
                     </Link>
@@ -517,7 +517,7 @@ function HomePage() {
             >
               <Card className="h-full hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <Users className="h-12 w-12 text-green-600 mb-4" />
+                  <Users className="h-12 w-12 text-teal-600 mb-4" />
                   <CardTitle className="text-2xl">Customer Service Automation</CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -526,15 +526,15 @@ function HomePage() {
                   </p>
                   <ul className="space-y-2">
                     <li className="flex items-center text-sm text-slate-600">
-                      <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                      <CheckCircle className="h-4 w-4 text-teal-500 mr-2" />
                       24/7 availability
                     </li>
                     <li className="flex items-center text-sm text-slate-600">
-                      <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                      <CheckCircle className="h-4 w-4 text-teal-500 mr-2" />
                       Maintains your brand voice
                     </li>
                     <li className="flex items-center text-sm text-slate-600">
-                      <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                      <CheckCircle className="h-4 w-4 text-teal-500 mr-2" />
                       Intelligent escalation
                     </li>
                   </ul>
@@ -550,7 +550,7 @@ function HomePage() {
             >
               <Card className="h-full hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <BarChart3 className="h-12 w-12 text-green-600 mb-4" />
+                  <BarChart3 className="h-12 w-12 text-teal-600 mb-4" />
                   <CardTitle className="text-2xl">Marketing Operations</CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -559,15 +559,15 @@ function HomePage() {
                   </p>
                   <ul className="space-y-2">
                     <li className="flex items-center text-sm text-slate-600">
-                      <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                      <CheckCircle className="h-4 w-4 text-teal-500 mr-2" />
                       Lead nurturing sequences
                     </li>
                     <li className="flex items-center text-sm text-slate-600">
-                      <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                      <CheckCircle className="h-4 w-4 text-teal-500 mr-2" />
                       Social media automation
                     </li>
                     <li className="flex items-center text-sm text-slate-600">
-                      <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                      <CheckCircle className="h-4 w-4 text-teal-500 mr-2" />
                       Campaign optimization
                     </li>
                   </ul>
@@ -583,7 +583,7 @@ function HomePage() {
             >
               <Card className="h-full hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <Clock className="h-12 w-12 text-green-600 mb-4" />
+                  <Clock className="h-12 w-12 text-teal-600 mb-4" />
                   <CardTitle className="text-2xl">Administrative Tasks</CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -592,15 +592,15 @@ function HomePage() {
                   </p>
                   <ul className="space-y-2">
                     <li className="flex items-center text-sm text-slate-600">
-                      <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                      <CheckCircle className="h-4 w-4 text-teal-500 mr-2" />
                       Appointment scheduling
                     </li>
                     <li className="flex items-center text-sm text-slate-600">
-                      <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                      <CheckCircle className="h-4 w-4 text-teal-500 mr-2" />
                       Data entry & processing
                     </li>
                     <li className="flex items-center text-sm text-slate-600">
-                      <CheckCircle className="h-4 w-4 text-green-500 mr-2" />
+                      <CheckCircle className="h-4 w-4 text-teal-500 mr-2" />
                       Invoice management
                     </li>
                   </ul>
@@ -635,8 +635,8 @@ function HomePage() {
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <div className="bg-green-100 rounded-full p-6 w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-                <BarChart3 className="h-10 w-10 text-green-600" />
+              <div className="bg-teal-100 rounded-full p-6 w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                <BarChart3 className="h-10 w-10 text-teal-600" />
               </div>
               <h3 className="text-xl font-semibold text-slate-900 mb-2">Proven Results</h3>
               <p className="text-slate-600">40% reduction in time spent on repetitive tasks within the first month</p>
@@ -649,8 +649,8 @@ function HomePage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               viewport={{ once: true }}
             >
-              <div className="bg-green-100 rounded-full p-6 w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-                <Users className="h-10 w-10 text-green-600" />
+              <div className="bg-teal-100 rounded-full p-6 w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                <Users className="h-10 w-10 text-teal-600" />
               </div>
               <h3 className="text-xl font-semibold text-slate-900 mb-2">Expert Management</h3>
               <p className="text-slate-600">Our team of AI specialists continuously monitors and optimizes your agents</p>
@@ -663,8 +663,8 @@ function HomePage() {
               transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              <div className="bg-green-100 rounded-full p-6 w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-                <Zap className="h-10 w-10 text-green-600" />
+              <div className="bg-teal-100 rounded-full p-6 w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                <Zap className="h-10 w-10 text-teal-600" />
               </div>
               <h3 className="text-xl font-semibold text-slate-900 mb-2">Seamless Integration</h3>
               <p className="text-slate-600">Works with your existing tools and systems, no changes required</p>
@@ -677,8 +677,8 @@ function HomePage() {
               transition={{ duration: 0.6, delay: 0.4 }}
               viewport={{ once: true }}
             >
-              <div className="bg-green-100 rounded-full p-6 w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-                <Shield className="h-10 w-10 text-green-600" />
+              <div className="bg-teal-100 rounded-full p-6 w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                <Shield className="h-10 w-10 text-teal-600" />
               </div>
               <h3 className="text-xl font-semibold text-slate-900 mb-2">Transparent Reporting</h3>
               <p className="text-slate-600">Detailed weekly reports showing exactly what your agents accomplished</p>
@@ -688,7 +688,7 @@ function HomePage() {
       </section>
 
       {/* Pilot Offer Section */}
-      <section className="py-24 bg-gradient-to-r from-green-600 to-green-700">
+      <section className="py-24 bg-gradient-to-r from-teal-600 to-teal-700">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -697,20 +697,20 @@ function HomePage() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Start Risk-Free with Our 14-Day Pilot</h2>
-            <p className="text-xl text-green-100 mb-8 leading-relaxed">
+            <p className="text-xl text-teal-100 mb-8 leading-relaxed">
               Experience the power of managed AI agents with no long-term commitment. We'll identify your biggest time drain, 
               deploy a custom agent, and show you measurable results within two weeks. If you're not completely satisfied 
               with the time savings and quality, there's no obligation to continue.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-green-600 hover:bg-slate-100 text-lg px-8 py-4 h-auto">
+              <Button size="lg" className="bg-white text-teal-600 hover:bg-slate-100 text-lg px-8 py-4 h-auto">
                 Start Your 14-Day Pilot
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="text-white border-white hover:bg-white hover:text-green-600 text-lg px-8 py-4 h-auto bg-transparent"
+                className="text-white border-white hover:bg-white hover:text-teal-600 text-lg px-8 py-4 h-auto bg-transparent"
                 onClick={() => scrollToSection('ready-to-get-started')}
               >
                 Schedule Discovery Call
@@ -721,7 +721,7 @@ function HomePage() {
       </section>
 
       {/* Contact Section */}
-      <section id="ready-to-get-started" className="py-20 bg-slate-900">
+      <section id="ready-to-get-started" className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
             className="text-center mb-16"
@@ -730,8 +730,8 @@ function HomePage() {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Ready to Get Started?</h2>
-            <p className="text-xl text-slate-300 max-w-3xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Ready to Get Started?</h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               Schedule your free discovery call today and learn how The Green Agents can transform your business operations.
             </p>
           </motion.div>
@@ -743,12 +743,12 @@ function HomePage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white/10 backdrop-blur-md rounded-2xl p-8"
+                className="bg-white rounded-2xl p-8 shadow-lg"
               >
                 <form onSubmit={handleFormSubmit} className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <label htmlFor="firstName" className="block text-sm font-medium text-white mb-2">
+                      <label htmlFor="firstName" className="block text-sm font-medium text-slate-700 mb-2">
                         First Name
                       </label>
                       <input
@@ -758,12 +758,12 @@ function HomePage() {
                         value={formData.firstName}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent"
+                        className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-lg text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent"
                         placeholder="Enter your first name"
                       />
                     </div>
                     <div>
-                      <label htmlFor="lastName" className="block text-sm font-medium text-white mb-2">
+                      <label htmlFor="lastName" className="block text-sm font-medium text-slate-700 mb-2">
                         Last Name
                       </label>
                       <input
@@ -773,14 +773,14 @@ function HomePage() {
                         value={formData.lastName}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent"
+                        className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-lg text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent"
                         placeholder="Enter your last name"
                       />
                     </div>
                   </div>
                   
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
+                    <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-2">
                       Business Email
                     </label>
                     <input
@@ -790,13 +790,13 @@ function HomePage() {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent"
+                      className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-lg text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent"
                       placeholder="Enter your business email"
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="company" className="block text-sm font-medium text-white mb-2">
+                    <label htmlFor="company" className="block text-sm font-medium text-slate-700 mb-2">
                       Company Name
                     </label>
                     <input
@@ -806,13 +806,13 @@ function HomePage() {
                       value={formData.company}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent"
+                      className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-lg text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent"
                       placeholder="Enter your company name"
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-white mb-2">
+                    <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-2">
                       What tasks would you like to automate?
                     </label>
                     <textarea
@@ -821,7 +821,7 @@ function HomePage() {
                       value={formData.message}
                       onChange={handleInputChange}
                       rows={4}
-                      className="w-full px-4 py-3 bg-white/20 border border-white/30 rounded-lg text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent resize-none"
+                      className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-lg text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent resize-none"
                       placeholder="Tell us about the repetitive tasks that are slowing down your business..."
                     ></textarea>
                   </div>
@@ -857,7 +857,7 @@ function HomePage() {
                   <Button 
                     type="submit" 
                     size="lg" 
-                    className="w-full bg-green-600 hover:bg-green-700 text-white text-lg py-4 h-auto"
+                    className="w-full bg-teal-600 hover:bg-teal-700 text-white text-lg py-4 h-auto"
                   >
                     Schedule My Free Discovery Call
                     <ArrowRight className="ml-2 h-5 w-5" />
@@ -873,26 +873,26 @@ function HomePage() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6 }}
-                className="bg-white/10 backdrop-blur-md rounded-2xl p-8 text-center"
+                className="bg-white rounded-2xl p-8 text-center shadow-lg"
               >
                 <div className="mb-6">
                   <img src={tgaLogo} alt="The Green Agents" className="h-20 w-auto mx-auto mb-4" />
-                  <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
                     <CheckCircle className="h-8 w-8 text-white" />
                   </div>
                 </div>
                 
-                <h3 className="text-2xl font-bold text-white mb-4">
+                <h3 className="text-2xl font-bold text-slate-900 mb-4">
                   Thank you for your interest!
                 </h3>
                 
-                <p className="text-lg text-green-100 mb-6">
+                <p className="text-lg text-slate-600 mb-6">
                   We'll be in touch soon from the Green Agents Team! You have made the right choice.
                 </p>
                 
-                <div className="bg-green-600/20 border border-green-600/30 rounded-lg p-4 mb-6">
-                  <h4 className="text-green-400 font-semibold mb-2">💡 Fun Fact of the Day</h4>
-                  <p className="text-green-100 text-sm">
+                <div className="bg-teal-600/20 border border-teal-600/30 rounded-lg p-4 mb-6">
+                  <h4 className="text-teal-600 font-semibold mb-2">💡 Fun Fact of the Day</h4>
+                  <p className="text-slate-700 text-sm">
                     {randomFact}
                   </p>
                 </div>
@@ -900,7 +900,7 @@ function HomePage() {
                 <Button 
                   onClick={() => setFormSubmitted(false)}
                   variant="outline"
-                  className="text-white border-white hover:bg-white hover:text-black bg-transparent"
+                  className="text-teal-600 border-teal-600 hover:bg-teal-600 hover:text-white bg-transparent"
                 >
                   Send Another Message
                 </Button>
@@ -911,16 +911,16 @@ function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-950 py-12">
+      <footer className="bg-slate-100 py-12 border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center mb-4 md:mb-0">
               <img src={tgaLogo} alt="The Green Agents" className="h-40 lg:h-56 w-auto mr-8" />
-              <p className="text-slate-400">© 2025 The Green Agents Ltd. All rights reserved.</p>
+              <p className="text-slate-600">© 2025 The Green Agents Ltd. All rights reserved.</p>
             </div>
             <div className="flex space-x-6">
-              <Link to="/privacy-policy" className="text-slate-400 hover:text-green-400 transition-colors">Privacy Policy</Link>
-              <Link to="/terms-of-service" className="text-slate-400 hover:text-green-400 transition-colors">Terms of Service</Link>
+              <Link to="/privacy-policy" className="text-slate-600 hover:text-teal-600 transition-colors">Privacy Policy</Link>
+              <Link to="/terms-of-service" className="text-slate-600 hover:text-teal-600 transition-colors">Terms of Service</Link>
             </div>
           </div>
         </div>
