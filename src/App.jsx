@@ -146,11 +146,11 @@ function HomePage() {
             {/* Desktop Navigation */}
             <div className="hidden lg:block">
               <div className="ml-10 flex items-baseline space-x-8">
-                <button onClick={() => scrollToSection('how-it-works')} className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors">How It Works</button>
-                <button onClick={() => scrollToSection('products')} className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors">Our Products</button>
-                <button onClick={() => scrollToSection('services')} className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors">Services</button>
-                <button onClick={() => scrollToSection('why-us')} className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors">Why Choose Us</button>
-                <button onClick={() => scrollToSection('ready-to-get-started')} className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors">Contact</button>
+                <button onClick={() => scrollToSection('how-it-works')} className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap">How It Works</button>
+                <button onClick={() => scrollToSection('products')} className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap">Our Products</button>
+                <button onClick={() => scrollToSection('services')} className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap">Services</button>
+                <button onClick={() => scrollToSection('why-us')} className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap">Why Choose Us</button>
+                <button onClick={() => scrollToSection('ready-to-get-started')} className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap">Contact</button>
               </div>
             </div>
             
