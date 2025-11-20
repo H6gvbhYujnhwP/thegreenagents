@@ -21,6 +21,7 @@ import EmailAutomationPage from './components/EmailAutomationPage.jsx'
 import MarketingAutomationPage from './components/MarketingAutomationPage.jsx'
 import CustomerServicePage from './components/CustomerServicePage.jsx'
 import DataAnalysisPage from './components/DataAnalysisPage.jsx'
+import ContactPage from './components/ContactPage.jsx'
 import './App.css'
 
 function HomePage() {
@@ -150,7 +151,7 @@ function HomePage() {
                 <button onClick={() => scrollToSection('products')} className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap">Our Products</button>
                 <button onClick={() => scrollToSection('services')} className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap">Services</button>
                 <button onClick={() => scrollToSection('why-us')} className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap">Why Choose Us</button>
-                <button onClick={() => scrollToSection('ready-to-get-started')} className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap">Contact</button>
+                <Link to="/contact" className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap">Contact</Link>
               </div>
             </div>
             
@@ -199,7 +200,7 @@ function HomePage() {
                 <button onClick={() => scrollToSection('products')} className="block w-full text-left text-slate-700 hover:text-teal-600 py-2 text-sm font-medium transition-colors">Our Products</button>
                 <button onClick={() => scrollToSection('services')} className="block w-full text-left text-slate-700 hover:text-teal-600 py-2 text-sm font-medium transition-colors">Services</button>
                 <button onClick={() => scrollToSection('why-us')} className="block w-full text-left text-slate-700 hover:text-teal-600 py-2 text-sm font-medium transition-colors">Why Choose Us</button>
-                <button onClick={() => scrollToSection('ready-to-get-started')} className="block w-full text-left text-slate-700 hover:text-teal-600 py-2 text-sm font-medium transition-colors">Contact</button>
+                <Link to="/contact" className="block w-full text-left text-slate-700 hover:text-teal-600 py-2 text-sm font-medium transition-colors" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
                 <div className="pt-4 border-t border-slate-200 space-y-3">
                   <Button 
                     variant="outline" 
@@ -940,6 +941,7 @@ function App() {
         <Route path="/marketing-automation-agent" element={<MarketingAutomationPage />} />
         <Route path="/customer-service-agent" element={<CustomerServicePage />} />
         <Route path="/data-analysis-agent" element={<DataAnalysisPage />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </Router>
   )
