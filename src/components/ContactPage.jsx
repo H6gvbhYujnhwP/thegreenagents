@@ -2,11 +2,9 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from '@/components/ui/button.jsx'
 // import { motion, AnimatePresence } from 'framer-motion'
-import { Mail, Phone, MapPin, CheckCircle, Menu, X } from 'lucide-react'
-import tgaLogo from '../assets/TheGreenAgents1.png'
+import { Mail, Phone, MapPin, CheckCircle } from 'lucide-react'
 
 function ContactPage() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -79,70 +77,6 @@ function ContactPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Navigation */}
-      <nav className="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-24 lg:h-32">
-            <div className="flex items-center">
-              <Link to="/">
-                <img src={tgaLogo} alt="The Green Agents" className="w-48 lg:w-80 h-auto" />
-              </Link>
-            </div>
-            
-            {/* Desktop Navigation */}
-            <div className="hidden lg:block">
-              <div className="ml-10 flex items-baseline space-x-8">
-                <Link to="/" className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap">Home</Link>
-                <Link to="/contact" className="text-teal-600 px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap border-b-2 border-teal-600">Contact</Link>
-              </div>
-            </div>
-            
-            {/* Desktop CTA */}
-            <div className="hidden lg:flex items-center space-x-4">
-              <Button 
-                className="bg-teal-600 hover:bg-teal-700 text-white"
-                onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                Get Started
-              </Button>
-            </div>
-
-            {/* Mobile menu button */}
-            <div className="lg:hidden">
-              <Button
-                variant="ghost"
-                size="sm"
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                className="text-slate-700 hover:text-teal-600"
-              >
-                {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-              </Button>
-            </div>
-          </div>
-        </div>
-
-        {/* Mobile Navigation */}
-        {mobileMenuOpen && (
-          <div className="lg:hidden bg-white border-t border-slate-200"
-          >
-            <div className="px-4 pt-2 pb-4 space-y-2">
-              <Link to="/" className="block text-slate-700 hover:text-teal-600 px-3 py-2 text-base font-medium transition-colors">Home</Link>
-              <Link to="/contact" className="block text-teal-600 px-3 py-2 text-base font-medium transition-colors border-l-4 border-teal-600">Contact</Link>
-              <div className="pt-4 space-y-2">
-                <Button 
-                  className="w-full bg-teal-600 hover:bg-teal-700 text-white"
-                  onClick={() => {
-                    setMobileMenuOpen(false)
-                    document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })
-                  }}
-                >
-                  Get Started
-                </Button>
-              </div>
-            </div>
-          </div>
-        )}
-      </nav>
 
       {/* Hero Section */}
       <section className="py-16 lg:py-24 bg-gradient-to-br from-slate-50 to-white">
