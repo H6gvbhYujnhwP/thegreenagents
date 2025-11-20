@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from '@/components/ui/button.jsx'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { Mail, Phone, MapPin, CheckCircle } from 'lucide-react'
 import tgaLogo from '../assets/TheGreenAgents1.png'
 
@@ -122,8 +122,9 @@ function ContactPage() {
         </div>
 
         {/* Mobile Navigation */}
-        {mobileMenuOpen && (
-          <motion.div
+        <AnimatePresence>
+          {mobileMenuOpen && (
+            <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
@@ -144,8 +145,9 @@ function ContactPage() {
                 </Button>
               </div>
             </div>
-          </motion.div>
-        )}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </nav>
 
       {/* Hero Section */}
