@@ -55,29 +55,11 @@ function ContactPage() {
       if (response.ok) {
         setFormSubmitted(true)
       } else {
-        // Fallback to mailto if Formspree fails
-        const subject = encodeURIComponent(`Contact Form: ${formData.firstName} ${formData.lastName} - ${formData.company}`)
-        const body = encodeURIComponent(
-          `Name: ${formData.firstName} ${formData.lastName}\n` +
-          `Email: ${formData.email}\n` +
-          `Company: ${formData.company}\n\n` +
-          `Message:\n${formData.message}`
-        )
-        window.location.href = `mailto:hello@thegreenagents.com?subject=${subject}&body=${body}`
-        setFormSubmitted(true)
+        alert('Sorry, there was an error sending your message. Please try again.')
       }
     } catch (error) {
       console.error('Form submission error:', error)
-      // Fallback to mailto if fetch fails
-      const subject = encodeURIComponent(`Contact Form: ${formData.firstName} ${formData.lastName} - ${formData.company}`)
-      const body = encodeURIComponent(
-        `Name: ${formData.firstName} ${formData.lastName}\n` +
-        `Email: ${formData.email}\n` +
-        `Company: ${formData.company}\n\n` +
-        `Message:\n${formData.message}`
-      )
-      window.location.href = `mailto:hello@thegreenagents.com?subject=${subject}&body=${body}`
-      setFormSubmitted(true)
+      alert('Sorry, there was an error sending your message. Please try again.')
     }
   }
 
