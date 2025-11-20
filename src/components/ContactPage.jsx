@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from '@/components/ui/button.jsx'
 // import { motion, AnimatePresence } from 'framer-motion'
-import { Mail, Phone, MapPin, CheckCircle } from 'lucide-react'
+import { Mail, Phone, MapPin, CheckCircle, Menu, X } from 'lucide-react'
 import tgaLogo from '../assets/TheGreenAgents1.png'
 
 function ContactPage() {
