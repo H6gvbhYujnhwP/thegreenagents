@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Button } from '@/components/ui/button.jsx'
-import { motion, AnimatePresence } from 'framer-motion'
+// import { motion, AnimatePresence } from 'framer-motion'
 import { Mail, Phone, MapPin, CheckCircle } from 'lucide-react'
 import tgaLogo from '../assets/TheGreenAgents1.png'
 
@@ -122,13 +122,8 @@ function ContactPage() {
         </div>
 
         {/* Mobile Navigation */}
-        <AnimatePresence>
-          {mobileMenuOpen && (
-            <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-white border-t border-slate-200"
+        {mobileMenuOpen && (
+          <div className="lg:hidden bg-white border-t border-slate-200"
           >
             <div className="px-4 pt-2 pb-4 space-y-2">
               <Link to="/" className="block text-slate-700 hover:text-teal-600 px-3 py-2 text-base font-medium transition-colors">Home</Link>
@@ -145,18 +140,14 @@ function ContactPage() {
                 </Button>
               </div>
             </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
+          </div>
+        )}
       </nav>
 
       {/* Hero Section */}
       <section className="py-16 lg:py-24 bg-gradient-to-br from-slate-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+          <div
             className="text-center"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-6">
@@ -165,14 +156,11 @@ function ContactPage() {
             <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-8">
               Ready to transform your business with AI agents? Schedule your free discovery call today and learn how The Green Agents can help you work smarter.
             </p>
-          </motion.div>
+          </div>
 
           {/* Contact Info Cards */}
           <div className="grid md:grid-cols-3 gap-6 mt-12 mb-16">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
+            <div
               className="bg-white p-6 rounded-lg shadow-md text-center"
             >
               <div className="bg-teal-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
@@ -182,12 +170,9 @@ function ContactPage() {
               <a href="mailto:hello@thegreenagents.com" className="text-teal-600 hover:text-teal-700 transition-colors">
                 hello@thegreenagents.com
               </a>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
+            <div
               className="bg-white p-6 rounded-lg shadow-md text-center"
             >
               <div className="bg-teal-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
@@ -196,12 +181,9 @@ function ContactPage() {
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Call Us</h3>
               <p className="text-slate-600">Available Monday-Friday</p>
               <p className="text-slate-600">9:00 AM - 5:00 PM GMT</p>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
+            <div
               className="bg-white p-6 rounded-lg shadow-md text-center"
             >
               <div className="bg-teal-100 rounded-full p-4 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
@@ -210,7 +192,7 @@ function ContactPage() {
               <h3 className="text-lg font-semibold text-slate-900 mb-2">Location</h3>
               <p className="text-slate-600">United Kingdom</p>
               <p className="text-slate-600">Serving SMEs Nationwide</p>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -219,10 +201,7 @@ function ContactPage() {
       <section id="contact-form" className="py-16 lg:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           {!formSubmitted ? (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
+            <div
               className="bg-slate-50 p-8 lg:p-12 rounded-2xl shadow-lg"
             >
               <h2 className="text-3xl font-bold text-slate-900 mb-4 text-center">Schedule Your Free Discovery Call</h2>
@@ -325,12 +304,9 @@ function ContactPage() {
                   Schedule My Free Discovery Call
                 </Button>
               </form>
-            </motion.div>
+            </div>
           ) : (
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5 }}
+            <div
               className="bg-teal-50 p-8 lg:p-12 rounded-2xl shadow-lg text-center"
             >
               <div className="bg-teal-100 rounded-full p-6 w-24 h-24 mx-auto mb-6 flex items-center justify-center">
@@ -357,7 +333,7 @@ function ContactPage() {
                   </Button>
                 </Link>
               </div>
-            </motion.div>
+            </div>
           )}
         </div>
       </section>
