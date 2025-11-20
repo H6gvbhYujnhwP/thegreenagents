@@ -71,7 +71,7 @@ function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-              Schedule Your Free Discovery Call
+              Contact Me
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               Fill out the form below and we'll get back to you within 24 hours to schedule your consultation.
@@ -147,20 +147,7 @@ function ContactPage() {
                     />
                   </div>
                   
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-2">
-                      What tasks would you like to automate?
-                    </label>
-                    <textarea
-                      id="message"
-                      name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      rows={4}
-                      className="w-full px-4 py-3 bg-slate-50 border border-slate-300 rounded-lg text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-transparent resize-none"
-                      placeholder="Tell us about the repetitive tasks that are slowing down your business..."
-                    ></textarea>
-                  </div>
+
                   
                   {/* Honeypot fields */}
                   <div style={{ display: 'none' }}>
@@ -186,7 +173,7 @@ function ContactPage() {
                     type="submit"
                     className="w-full bg-teal-600 hover:bg-teal-700 text-white font-semibold py-4 px-6 rounded-lg transition-colors duration-200"
                   >
-                    Schedule My Free Discovery Call
+                    I'm interested
                   </button>
                 </form>
               </div>
