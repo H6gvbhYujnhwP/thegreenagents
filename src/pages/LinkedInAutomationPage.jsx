@@ -38,6 +38,18 @@ function LinkedInAutomationPage() {
               <li><strong>Lead Nurturing:</strong> We can even automate outreach and follow-up messages to turn connections into conversations.</li>
             </ul>
 
+            <h3>Try Social Echo: Your AI Social Media Team</h3>
+            <p>Want to automate your LinkedIn and social media content creation? Try Social Echo—our AI-powered social media content generator. Generate professional posts daily, train the AI to match your brand voice, and build your authority without the cost of a marketing team.</p>
+            <div className="bg-teal-50 p-8 rounded-lg my-8">
+              <h4 className="text-2xl font-bold text-slate-900 mb-4 text-center">🎉 FREE 7-Day Trial</h4>
+              <p className="text-center text-slate-700 mb-6">No credit card required. No bank details needed. Start generating professional social content today.</p>
+              <div className="text-center">
+                <Button asChild size="lg" className="bg-teal-600 hover:bg-teal-700 text-white">
+                  <a href="https://socialecho.ai/register" target="_blank" rel="noopener noreferrer">Start Your Free Trial</a>
+                </Button>
+              </div>
+            </div>
+
             <h3>Take the 60-Second AI Readiness Scorecard</h3>
             <p>Discover your biggest growth opportunity and get a personalized AI blueprint. Our free, no-obligation 60-minute AI Quick-Start Session will show you exactly how AI can transform your marketing—and give you your time back.</p>
             <div className="text-center mt-12">

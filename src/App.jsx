@@ -9,7 +9,8 @@ import DataAnalysisPage from './pages/DataAnalysisPage'
 import TermsOfService from './components/TermsOfService'
 import PrivacyPolicy from './components/PrivacyPolicy'
 import LinkedInAutomationPage from './pages/LinkedInAutomationPage'
-import EmailMarketingPage from './pages/EmailMarketingPage'
+import SocialEchoPage from './pages/SocialEchoPage'
+import WorkTrackrPage from './pages/WorkTrackrPage'
 import AssessmentPage from './pages/AssessmentPage'
 import HowItWorksPage from './pages/HowItWorksPage'
 import WhyChooseUsPage from './pages/WhyChooseUsPage'
@@ -30,7 +31,9 @@ function App() {
           <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/services/linkedin-automation" element={<LinkedInAutomationPage />} />
-          <Route path="/services/email-marketing-guide" element={<EmailMarketingPage />} />
+          <Route path="/our-apps" element={<SocialEchoPage />} />
+          <Route path="/our-apps/social-echo" element={<SocialEchoPage />} />
+          <Route path="/our-apps/worktrackr" element={<WorkTrackrPage />} />
           <Route path="/assessment" element={<AssessmentPage />} />
           <Route path="/how-it-works" element={<HowItWorksPage />} />
             <Route path="/why-us" element={<WhyChooseUsPage />} />

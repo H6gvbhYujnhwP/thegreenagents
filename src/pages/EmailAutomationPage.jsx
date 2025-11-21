@@ -65,7 +65,7 @@ function EmailAutomationPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">How Email Automation Works</h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">Our AI-powered system handles your entire email marketing pipeline from lead capture to conversion.</p>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">Our AI-powered system handles your entire email marketing pipeline from lead capture to conversion. In a world dominated by social media, email remains the highest-ROI marketing channel. Social media is great for reaching new audiences, but it's a crowded and distracting environment. Email, on the other hand, is a direct, personal, and permission-based conversation where you build the trust that turns prospects into paying clients.</p>
           </div>
           <div className="bg-slate-50 p-8 rounded-lg">
             <img 
@@ -136,6 +136,29 @@ function EmailAutomationPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">You Own Your Email List. You Don't Own Your Social Following.</h2>
+              <p className="text-slate-600 mb-6">Your email list is a valuable business asset that you control. You can back it up, move it to another provider, and contact your subscribers whenever you want. No algorithm can limit your reach, and no platform can suspend your account and wipe out your audience overnight. Building your business on social media is like building on rented land; your email list is property you own.</p>
+              <div className="bg-teal-50 p-8 rounded-lg mb-6">
+                <h3 className="text-2xl font-bold text-slate-900 mb-4 text-center">Key Differences</h3>
+                <div className="grid md:grid-cols-2 gap-8">
+                  <div>
+                    <h4 className="text-xl font-semibold text-slate-800">Ownership</h4>
+                    <p className="text-slate-700">You own your email list; the platform owns your social following.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-slate-800">Reach</h4>
+                    <p className="text-slate-700">Direct access to 100% of your email subscribers vs. a small fraction of your social followers.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-slate-800">Control</h4>
+                    <p className="text-slate-700">You control the message, timing, and format of your emails.</p>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-semibold text-slate-800">ROI</h4>
+                    <p className="text-slate-700">Email marketing generates an average return of £30-£40 for every £1 spent.</p>
+                  </div>
+                </div>
+              </div>
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Why Email Automation Matters for SMEs</h2>
               <div className="space-y-6">
                 <div className="flex gap-4">

@@ -8,7 +8,7 @@ import tgaLogo from '../assets/TheGreenAgents1.png'
 function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [servicesMenuOpen, setServicesMenuOpen] = useState(false)
-  const [resourcesMenuOpen, setResourcesMenuOpen] = useState(false)
+  const [ourAppsMenuOpen, setOurAppsMenuOpen] = useState(false)
   const location = useLocation()
 
   const navLinks = [
@@ -25,10 +25,11 @@ function Navigation() {
       ],
     },
     {
-      name: 'Resources',
-      href: '/resources',
+      name: 'Our Apps',
+      href: '/our-apps',
       subLinks: [
-        { name: 'Email Marketing Guide', href: '/services/email-marketing-guide' },
+        { name: 'Social Echo', href: '/our-apps/social-echo' },
+        { name: 'WorkTrackr', href: '/our-apps/worktrackr' },
       ],
     },
     { name: 'Why Choose Us', href: '/#why-us' },
@@ -59,16 +60,16 @@ function Navigation() {
               link.subLinks ? (
                 <div key={link.name} className="relative">
                   <button
-                    onMouseEnter={() => link.name === 'Services' ? setServicesMenuOpen(true) : setResourcesMenuOpen(true)}
-                    onMouseLeave={() => link.name === 'Services' ? setServicesMenuOpen(false) : setResourcesMenuOpen(false)}
+                    onMouseEnter={() => link.name === 'Services' ? setServicesMenuOpen(true) : setOurAppsMenuOpen(true)}
+                    onMouseLeave={() => link.name === 'Services' ? setServicesMenuOpen(false) : setOurAppsMenuOpen(false)}
                     className="flex items-center text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap"
                   >
                     {link.name} <ChevronDown className="ml-1 h-4 w-4" />
                   </button>
-                  {((link.name === 'Services' && servicesMenuOpen) || (link.name === 'Resources' && resourcesMenuOpen)) && (
+                  {((link.name === 'Services' && servicesMenuOpen) || (link.name === 'Our Apps' && ourAppsMenuOpen)) && (
                     <div
-                      onMouseEnter={() => link.name === 'Services' ? setServicesMenuOpen(true) : setResourcesMenuOpen(true)}
-                      onMouseLeave={() => link.name === 'Services' ? setServicesMenuOpen(false) : setResourcesMenuOpen(false)}
+                      onMouseEnter={() => link.name === 'Services' ? setServicesMenuOpen(true) : setOurAppsMenuOpen(true)}
+                      onMouseLeave={() => link.name === 'Services' ? setServicesMenuOpen(false) : setOurAppsMenuOpen(false)}
                       className="absolute top-full left-0 mt-0 w-56 bg-white shadow-md border-t-2 border-teal-600 z-[100]"
                     >
                       <div className="py-2">
