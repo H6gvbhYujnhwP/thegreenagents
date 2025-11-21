@@ -14,7 +14,7 @@ function MarketingAutomationPage() {
                 Marketing Automation Agent
               </h1>
               <p className="text-xl text-slate-600 mb-8">
-                Complete marketing campaigns that run themselves. From social media to ad optimization, your entire marketing pipeline on autopilot.
+                For UK SMEs, consistent marketing is a constant battle. Our AI Marketing Automation Agent takes the entire workload off your plate, running campaigns that save you time, cut costs, and drive real growth. From social media to ad optimization, your entire marketing pipeline is on autopilot.
               </p>
               <div className="flex gap-4">
                 <Button asChild className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-6 text-lg">
@@ -65,7 +65,7 @@ function MarketingAutomationPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">How Marketing Automation Works</h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">Our AI manages your entire marketing ecosystem, from content creation to performance optimization.</p>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">Our AI agent acts as your dedicated marketing manager, handling the entire workflow from strategy and content creation to multi-channel distribution and performance optimization. It’s a closed-loop system designed for one thing: results.</p>
           </div>
           <div className="bg-slate-50 p-8 rounded-lg">
             <img 
@@ -134,6 +134,30 @@ function MarketingAutomationPage() {
       {/* Use Cases Section */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Why Choose Our Marketing Automation?</h2>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Built on Real Experience</h3>
+              <p className="text-slate-700">Designed with 40 years of real-world sales and marketing expertise from our director, John Wicks. This isn't just tech; it's proven strategy.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Fully Managed Service</h3>
+              <p className="text-slate-700">We don't just hand you software. Our team provides a fully managed service, ensuring your AI agent is always optimized for performance.</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <h3 className="text-xl font-bold text-slate-900 mb-2">Transparent Reporting</h3>
+              <p className="text-slate-700">You get clear, jargon-free reports that show exactly what's working, what's not, and the tangible ROI your business is getting.</p>
+            </div>
+          </div>
+
+          <div className="bg-teal-50 p-8 rounded-lg mb-16">
+            <p className="text-xl text-slate-800 italic mb-4">"Since using The Green Agents, our online presence has exploded. We're saving 15+ hours a week and our lead quality has never been better. It feels like we have a full marketing team working for us around the clock."</p>
+            <p className="text-right font-semibold text-teal-700">- David Chen, Director at a UK-based manufacturing SME</p>
+          </div>
+
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">What Can Marketing Automation Do For You?</h2>
             <p className="text-xl text-slate-600">Real solutions for real SME challenges</p>
@@ -218,8 +242,8 @@ function MarketingAutomationPage() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-teal-600 to-teal-700">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Transform Your Marketing?</h2>
-          <p className="text-xl text-teal-100 mb-10">Join hundreds of UK SMEs who have scaled their marketing with AI automation.</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Stop Juggling, Start Growing</h2>
+          <p className="text-xl text-teal-100 mb-10">Ready to get your marketing off your to-do list for good? Let our AI Marketing Automation Agent handle the heavy lifting so you can focus on what you do best: running your business. Book your free, no-obligation discovery session today and see how much time and money you could save.</p>
           <div className="flex justify-center gap-4">
             <Button asChild size="lg" className="bg-white text-teal-600 hover:bg-slate-100 px-8 py-6 text-lg">
               <Link to="/contact">Get Started Today</Link>
