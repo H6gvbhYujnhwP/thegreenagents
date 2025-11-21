@@ -1,0 +1,22 @@
+%%{init: {'theme':'base', 'themeVariables': { 'primaryColor':'#0D9488','primaryTextColor':'#fff','primaryBorderColor':'#0D9488','lineColor':'#0D9488','secondaryColor':'#E0F2F1','tertiaryColor':'#fff'}}}%%
+flowchart LR
+    A[Customer<br/>Inquiry] --> B{Channel}
+    B -->|Email| C[AI Email<br/>Response]
+    B -->|Chat| D[AI Chatbot]
+    B -->|Phone| E[Voice AI]
+    C --> F{Issue<br/>Complexity}
+    D --> F
+    E --> F
+    F -->|Simple| G[Instant<br/>Resolution]
+    F -->|Moderate| H[Knowledge Base<br/>Search]
+    F -->|Complex| I[Human<br/>Escalation]
+    G --> J[Customer<br/>Satisfied]
+    H --> K{Resolved?}
+    K -->|Yes| J
+    K -->|No| I
+    I --> L[Support Team<br/>Handles]
+    L --> J
+    
+    style A fill:#0D9488,stroke:#0D9488,color:#fff
+    style J fill:#10B981,stroke:#10B981,color:#fff
+    style I fill:#F59E0B,stroke:#F59E0B,color:#fff
