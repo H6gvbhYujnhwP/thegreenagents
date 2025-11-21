@@ -12,6 +12,7 @@ import LinkedInAutomationPage from './pages/LinkedInAutomationPage'
 import EmailMarketingPage from './pages/EmailMarketingPage'
 import AssessmentPage from './pages/AssessmentPage'
 import HowItWorksPage from './pages/HowItWorksPage'
+import WhyChooseUsPage from './pages/WhyChooseUsPage'
 import './App.css'
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Route path="/services/email-marketing-guide" element={<EmailMarketingPage />} />
           <Route path="/assessment" element={<AssessmentPage />} />
           <Route path="/how-it-works" element={<HowItWorksPage />} />
+            <Route path="/why-us" element={<WhyChooseUsPage />} />
         </Routes>
       </main>
     </Router>

@@ -248,7 +248,7 @@ function MarketingAutomationPage() {
             <Button asChild size="lg" className="bg-white text-teal-600 hover:bg-slate-100 px-8 py-6 text-lg">
               <Link to="/contact">Get Started Today</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-teal-500 px-8 py-6 text-lg">
+            <Button asChild size="lg" className="bg-white text-teal-600 hover:bg-slate-100 px-8 py-6 text-lg border-2 border-white">
               <Link to="/assessment">Free AI Readiness Assessment</Link>
             </Button>
           </div>
