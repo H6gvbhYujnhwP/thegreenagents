@@ -8,6 +8,7 @@ import tgaLogo from '../assets/TheGreenAgents1.png'
 function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [servicesMenuOpen, setServicesMenuOpen] = useState(false)
+  const [resourcesMenuOpen, setResourcesMenuOpen] = useState(false)
   const location = useLocation()
 
   const navLinks = [
@@ -58,21 +59,21 @@ function Navigation() {
               link.subLinks ? (
                 <div key={link.name} className="relative">
                   <button
-                    onMouseEnter={() => setServicesMenuOpen(true)}
-                    onMouseLeave={() => setServicesMenuOpen(false)}
+                    onMouseEnter={() => link.name === 'Services' ? setServicesMenuOpen(true) : setResourcesMenuOpen(true)}
+                    onMouseLeave={() => link.name === 'Services' ? setServicesMenuOpen(false) : setResourcesMenuOpen(false)}
                     className="flex items-center text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap"
                   >
                     {link.name} <ChevronDown className="ml-1 h-4 w-4" />
                   </button>
                   <AnimatePresence>
-                    {servicesMenuOpen && (
+                    {((link.name === 'Services' && servicesMenuOpen) || (link.name === 'Resources' && resourcesMenuOpen)) && (
                       <motion.div
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 10 }}
-                        onMouseEnter={() => setServicesMenuOpen(true)}
-                        onMouseLeave={() => setServicesMenuOpen(false)}
-                        className="absolute top-full left-0 mt-2 w-64 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-10"
+                        onMouseEnter={() => link.name === 'Services' ? setServicesMenuOpen(true) : setResourcesMenuOpen(true)}
+                        onMouseLeave={() => link.name === 'Services' ? setServicesMenuOpen(false) : setResourcesMenuOpen(false)}
+                        className="absolute top-full left-0 mt-2 w-64 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-[100]"
                       >
                         <div className="py-1">
                           {link.subLinks.map((subLink) => (
