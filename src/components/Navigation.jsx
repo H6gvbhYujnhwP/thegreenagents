@@ -65,30 +65,25 @@ function Navigation() {
                   >
                     {link.name} <ChevronDown className="ml-1 h-4 w-4" />
                   </button>
-                  <AnimatePresence>
-                    {((link.name === 'Services' && servicesMenuOpen) || (link.name === 'Resources' && resourcesMenuOpen)) && (
-                      <motion.div
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: 10 }}
-                        onMouseEnter={() => link.name === 'Services' ? setServicesMenuOpen(true) : setResourcesMenuOpen(true)}
-                        onMouseLeave={() => link.name === 'Services' ? setServicesMenuOpen(false) : setResourcesMenuOpen(false)}
-                        className="absolute top-full left-0 mt-2 w-64 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 z-[100]"
-                      >
-                        <div className="py-1">
-                          {link.subLinks.map((subLink) => (
-                            <Link
-                              key={subLink.name}
-                              to={subLink.href}
-                              className="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-teal-600"
-                            >
-                              {subLink.name}
-                            </Link>
-                          ))}
-                        </div>
-                      </motion.div>
-                    )}
-                  </AnimatePresence>
+                  {((link.name === 'Services' && servicesMenuOpen) || (link.name === 'Resources' && resourcesMenuOpen)) && (
+                    <div
+                      onMouseEnter={() => link.name === 'Services' ? setServicesMenuOpen(true) : setResourcesMenuOpen(true)}
+                      onMouseLeave={() => link.name === 'Services' ? setServicesMenuOpen(false) : setResourcesMenuOpen(false)}
+                      className="absolute top-full left-0 mt-0 w-56 bg-white shadow-md border-t-2 border-teal-600 z-[100]"
+                    >
+                      <div className="py-2">
+                        {link.subLinks.map((subLink) => (
+                          <Link
+                            key={subLink.name}
+                            to={subLink.href}
+                            className="block px-4 py-2.5 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-600 transition-colors"
+                          >
+                            {subLink.name}
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               ) : (
                 <Link
