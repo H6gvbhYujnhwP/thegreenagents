@@ -9,10 +9,10 @@ function HomePage() {
       <section className="py-20 lg:py-32 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6">
-            Deploy Your AI-Powered Marketing Team
+            Deploy Your AI-Powered Workforce
           </h1>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-10">
-            Automated email campaigns, social media management, and customer service that run 24/7—so you can focus on growing your business.
+            AI agents that automate your business operations, from marketing and customer service to app development and data analysis—so you can focus on growing your business.
           </p>
           <div className="flex justify-center gap-4">
             <Button asChild className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-6 text-lg">
@@ -30,7 +30,7 @@ function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <p className="text-lg font-semibold text-teal-600 mb-4">Trusted by UK SMEs</p>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-12">Join hundreds of UK SME owners who have automated their marketing</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-12">Join hundreds of UK SME owners who have automated their business operations</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-slate-50 p-8 rounded-lg">
                 <p className="text-4xl font-bold text-teal-600 mb-2">£30-£40</p>
@@ -53,14 +53,14 @@ function HomePage() {
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-16 items-center">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Are You the CEO, Head of Sales, and the Entire Marketing Department?</h2>
-            <p className="text-lg text-slate-600 mb-4">You know you need to be marketing consistently, but there are never enough hours in the day. While you're stretched thin managing every aspect of your business, your competitors are working smarter, not just harder.</p>
-            <p className="text-lg text-slate-600">The reality for most UK SME owners is brutal: you're wearing multiple hats, fighting fires, and marketing gets pushed to tomorrow. Again. Meanwhile, opportunities slip through your fingers and potential customers choose businesses that simply show up more consistently.</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Are You Wearing Too Many Hats in Your Business?</h2>
+            <p className="text-lg text-slate-600 mb-4">You know you need to be doing more—marketing, operations, customer service, data analysis—but there are never enough hours in the day. While you're stretched thin managing every aspect of your business, your competitors are working smarter, not just harder.</p>
+            <p className="text-lg text-slate-600">The reality for most UK SME owners is brutal: you're wearing multiple hats, fighting fires, and critical tasks get pushed to tomorrow. Again. Meanwhile, opportunities slip through your fingers because you can't scale yourself.</p>
           </div>
           <div>
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <h3 className="text-2xl font-bold text-teal-600 mb-4">It's Not a Lack of Effort. It's a Lack of Leverage.</h3>
-              <p className="text-lg text-slate-600">AI-powered automation handles the repetitive marketing tasks while you focus on strategy, sales, and growth. It's the leverage you need to achieve consistent brand presence, targeted messaging, and get hours back in your week—without hiring a marketing team.</p>
+              <p className="text-lg text-slate-600">AI-powered automation handles the repetitive tasks across your entire business while you focus on strategy, sales, and growth. It's the leverage you need to scale your operations, improve efficiency, and get hours back in your week—without hiring a full team.</p>
             </div>
           </div>
         </div>
@@ -71,7 +71,7 @@ function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Meet Your New AI-Powered Team</h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">Our AI agents are designed to handle the most time-consuming marketing tasks, so you can focus on what matters most.</p>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">Our AI agents are designed to handle the most time-consuming business tasks across marketing, operations, customer service, and more—so you can focus on what matters most.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Email Automation Agent */}
