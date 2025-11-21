@@ -12,7 +12,7 @@ function Navigation() {
   const location = useLocation()
 
   const navLinks = [
-    { name: 'How It Works', href: '/#how-it-works' },
+    { name: 'How It Works', href: '/how-it-works' },
     {
       name: 'Services',
       href: '/services',

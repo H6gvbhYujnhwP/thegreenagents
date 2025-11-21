@@ -309,46 +309,46 @@ function AssessmentPage() {
 
           {/* Booking Form */}
           {!bookingSubmitted ? (
-            <div className="bg-gradient-to-br from-teal-600 to-teal-700 rounded-lg p-8 text-white">
-              <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
-                <Zap className="w-6 h-6" />
+            <div className="bg-white border-2 border-slate-200 rounded-lg p-8 shadow-sm">
+              <h3 className="text-2xl font-bold text-slate-900 mb-2 flex items-center gap-2">
+                <Zap className="w-6 h-6 text-teal-600" />
                 Book Your Free Discovery Session
               </h3>
-              <p className="mb-6">Let's discuss how AI automation can transform your business. No obligation, just insights.</p>
+              <p className="text-slate-600 mb-6">Let's discuss how AI automation can transform your business. No obligation, just insights.</p>
               <form onSubmit={handleBookingSubmit} className="space-y-4">
                 <input type="hidden" name="ai_readiness_score" value={score} />
                 <input type="hidden" name="readiness_level" value={recommendations.level} />
                 <div>
-                  <label className="block text-sm font-medium mb-2">Full Name</label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">Full Name</label>
                   <input
                     type="text"
                     name="name"
                     required
-                    className="w-full px-4 py-3 rounded-md text-slate-900"
+                    className="w-full px-4 py-3 rounded-md border-2 border-slate-200 text-slate-900 placeholder-slate-400 focus:border-teal-600 focus:outline-none transition-colors"
                     placeholder="John Smith"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-2">Email Address</label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">Email Address</label>
                   <input
                     type="email"
                     name="email"
                     required
-                    className="w-full px-4 py-3 rounded-md text-slate-900"
+                    className="w-full px-4 py-3 rounded-md border-2 border-slate-200 text-slate-900 placeholder-slate-400 focus:border-teal-600 focus:outline-none transition-colors"
                     placeholder="john@company.com"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium mb-2">Company Name</label>
+                  <label className="block text-sm font-semibold text-slate-700 mb-2">Company Name</label>
                   <input
                     type="text"
                     name="company"
                     required
-                    className="w-full px-4 py-3 rounded-md text-slate-900"
+                    className="w-full px-4 py-3 rounded-md border-2 border-slate-200 text-slate-900 placeholder-slate-400 focus:border-teal-600 focus:outline-none transition-colors"
                     placeholder="Your Company Ltd"
                   />
                 </div>
-                <Button type="submit" className="w-full bg-white text-teal-600 hover:bg-slate-100 py-6 text-lg font-semibold">
+                <Button type="submit" className="w-full bg-teal-600 hover:bg-teal-700 text-white py-6 text-lg font-semibold">
                   Book My Free Discovery Session
                 </Button>
               </form>

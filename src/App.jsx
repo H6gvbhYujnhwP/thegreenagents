@@ -11,6 +11,7 @@ import PrivacyPolicy from './components/PrivacyPolicy'
 import LinkedInAutomationPage from './pages/LinkedInAutomationPage'
 import EmailMarketingPage from './pages/EmailMarketingPage'
 import AssessmentPage from './pages/AssessmentPage'
+import HowItWorksPage from './pages/HowItWorksPage'
 import './App.css'
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path="/services/linkedin-automation" element={<LinkedInAutomationPage />} />
           <Route path="/services/email-marketing-guide" element={<EmailMarketingPage />} />
           <Route path="/assessment" element={<AssessmentPage />} />
+          <Route path="/how-it-works" element={<HowItWorksPage />} />
         </Routes>
       </main>
     </Router>
