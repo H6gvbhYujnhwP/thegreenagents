@@ -16,9 +16,9 @@ function SocialEchoPage() {
           </p>
           <div className="flex justify-center gap-4">
             <Button asChild size="lg" className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-6 text-lg">
-              <a href="https://socialecho.ai/register" target="_blank" rel="noopener noreferrer">Start Your Free Trial</a>
+              <a href="https://www.socialecho.ai" target="_blank" rel="noopener noreferrer">Start Your Free Trial</a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-slate-900 px-8 py-6 text-lg">
+            <Button asChild size="lg" variant="outline" className="bg-white border-white text-slate-900 hover:bg-slate-100 px-8 py-6 text-lg">
               <a href="https://socialecho.ai" target="_blank" rel="noopener noreferrer">Learn More</a>
             </Button>
           </div>
