@@ -67,13 +67,13 @@ function ContactPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      <section className="py-20 bg-slate-50">
+      <section className="py-12 sm:py-16 lg:py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+          <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 mb-3 sm:mb-4">
               Contact Me
             </h1>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto px-2">
               Fill out the form below and we'll get back to you within 24 hours to schedule your consultation.
             </p>
           </div>

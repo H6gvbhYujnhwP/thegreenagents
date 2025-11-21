@@ -6,37 +6,37 @@ function LinkedInAutomationPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="py-20 lg:py-32 bg-slate-50">
+      <section className="py-12 sm:py-20 lg:py-32 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-4 sm:mb-6 leading-tight">
             Automate Your LinkedIn Presence
           </h1>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-10">
+          <p className="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto mb-8 sm:mb-10 px-2">
             Build your brand, connect with ideal clients, and generate leads—all on autopilot.
           </p>
-          <Button asChild className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-6 text-lg">
+          <Button asChild className="bg-teal-600 hover:bg-teal-700 text-white px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg w-full sm:w-auto max-w-md mx-auto touch-manipulation">
             <a href="https://www.socialecho.ai" target="_blank" rel="noopener noreferrer">Start Your Free Trial</a>
           </Button>
         </div>
       </section>
 
       {/* ROI Comparison Chart */}
-      <section className="py-20">
+      <section className="py-12 sm:py-16 lg:py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Stop Wasting Time, Start Seeing Results</h2>
-            <p className="text-xl text-slate-600">Compare the cost and effort of manual posting vs. automated solutions.</p>
+          <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mb-3 sm:mb-4">Stop Wasting Time, Start Seeing Results</h2>
+            <p className="text-lg sm:text-xl text-slate-600 px-2">Compare the cost and effort of manual posting vs. automated solutions.</p>
           </div>
           <img src="/linkedin-images/linkedin-roi-comparison.png" alt="LinkedIn ROI Comparison Chart" className="w-full h-auto rounded-lg shadow-lg" />
         </div>
       </section>
 
       {/* Workflow Diagram */}
-      <section className="py-20 bg-slate-50">
+      <section className="py-12 sm:py-16 lg:py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Our Automated LinkedIn Workflow</h2>
-            <p className="text-xl text-slate-600">From strategy to lead generation, we handle it all.</p>
+          <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-900 mb-3 sm:mb-4">Our Automated LinkedIn Workflow</h2>
+            <p className="text-lg sm:text-xl text-slate-600 px-2">From strategy to lead generation, we handle it all.</p>
           </div>
           
           {/* Modern Workflow Steps */}
@@ -45,7 +45,7 @@ function LinkedInAutomationPage() {
             <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 transform -translate-y-1/2 z-0"></div>
             
             {/* Workflow Steps Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 relative z-10">
               {/* Step 1 */}
               <div className="bg-white rounded-xl shadow-lg p-6 border-2 border-teal-500 transform hover:scale-105 transition-transform duration-300">
                 <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-full mb-4 mx-auto">

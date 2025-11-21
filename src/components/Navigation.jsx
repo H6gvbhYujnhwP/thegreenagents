@@ -9,6 +9,8 @@ function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [servicesMenuOpen, setServicesMenuOpen] = useState(false)
   const [ourAppsMenuOpen, setOurAppsMenuOpen] = useState(false)
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false)
+  const [mobileAppsOpen, setMobileAppsOpen] = useState(false)
   const location = useLocation()
 
   const navLinks = [
@@ -132,25 +134,42 @@ function Navigation() {
             exit={{ opacity: 0, height: 0 }}
             className="lg:hidden bg-white border-t border-slate-200"
           >
-            <div className="px-4 py-4 space-y-3">
+            <div className="px-4 py-4 space-y-1">
               {navLinks.map((link) => (
                 <div key={link.name}>
                   {link.subLinks ? (
                     <div>
                       <button
-                        onClick={() => setServicesMenuOpen(!servicesMenuOpen)}
-                        className="flex justify-between items-center w-full text-left text-slate-700 hover:text-teal-600 py-2 text-sm font-medium transition-colors"
+                        onClick={() => {
+                          if (link.name === 'Services') {
+                            setMobileServicesOpen(!mobileServicesOpen)
+                            setMobileAppsOpen(false)
+                          } else {
+                            setMobileAppsOpen(!mobileAppsOpen)
+                            setMobileServicesOpen(false)
+                          }
+                        }}
+                        className="flex justify-between items-center w-full text-left text-slate-700 hover:text-teal-600 py-3 text-base font-medium transition-colors touch-manipulation"
                       >
-                        {link.name} <ChevronDown className={`ml-1 h-4 w-4 transition-transform ${servicesMenuOpen ? 'rotate-180' : ''}`} />
+                        {link.name} 
+                        <ChevronDown className={`ml-1 h-5 w-5 transition-transform ${
+                          (link.name === 'Services' && mobileServicesOpen) || (link.name === 'Our Apps' && mobileAppsOpen) 
+                            ? 'rotate-180' 
+                            : ''
+                        }`} />
                       </button>
-                      {servicesMenuOpen && (
-                        <div className="pl-4 mt-2 space-y-2">
+                      {((link.name === 'Services' && mobileServicesOpen) || (link.name === 'Our Apps' && mobileAppsOpen)) && (
+                        <div className="pl-4 mt-1 space-y-1 pb-2">
                           {link.subLinks.map((subLink) => (
                             <Link
                               key={subLink.name}
                               to={subLink.href}
-                              className="block w-full text-left text-slate-600 hover:text-teal-600 py-2 text-sm font-medium transition-colors"
-                              onClick={() => setMobileMenuOpen(false)}
+                              className="block w-full text-left text-slate-600 hover:text-teal-600 py-2.5 text-sm transition-colors touch-manipulation"
+                              onClick={() => {
+                                setMobileMenuOpen(false)
+                                setMobileServicesOpen(false)
+                                setMobileAppsOpen(false)
+                              }}
                             >
                               {subLink.name}
                             </Link>
@@ -168,7 +187,7 @@ function Navigation() {
                           setMobileMenuOpen(false)
                         }
                       }}
-                      className="block w-full text-left text-slate-700 hover:text-teal-600 py-2 text-sm font-medium transition-colors"
+                      className="block w-full text-left text-slate-700 hover:text-teal-600 py-3 text-base font-medium transition-colors touch-manipulation"
                     >
                       {link.name}
                     </Link>
@@ -176,10 +195,10 @@ function Navigation() {
                 </div>
               ))}
               <div className="pt-4 border-t border-slate-200 space-y-3">
-                <Button asChild variant="outline" className="w-full text-teal-600 border-teal-600 hover:bg-teal-600 hover:text-white bg-transparent">
+                <Button asChild variant="outline" className="w-full text-teal-600 border-teal-600 hover:bg-teal-600 hover:text-white bg-transparent text-base py-6 touch-manipulation">
                   <Link to="/assessment" onClick={() => setMobileMenuOpen(false)}>AI Readiness Scorecard</Link>
                 </Button>
-                <Button asChild className="w-full bg-teal-600 hover:bg-teal-700 text-white">
+                <Button asChild className="w-full bg-teal-600 hover:bg-teal-700 text-white text-base py-6 touch-manipulation">
                   <Link to="/contact" onClick={() => setMobileMenuOpen(false)}>Get Started</Link>
                 </Button>
               </div>
