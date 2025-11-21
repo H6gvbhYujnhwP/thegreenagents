@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { Link } from 'react-router-dom'
+import { Mail, Megaphone, Headphones, BarChart3 } from 'lucide-react'
 
 function HomePage() {
   return (
@@ -75,6 +76,11 @@ function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Email Automation Agent */}
             <div className="bg-slate-50 p-8 rounded-lg text-center">
+              <div className="flex justify-center mb-6">
+                <div className="w-20 h-20 bg-teal-100 rounded-full flex items-center justify-center">
+                  <Mail className="w-10 h-10 text-teal-600" />
+                </div>
+              </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Email Automation Agent</h3>
               <p className="text-slate-600 mb-6">Intelligent email campaigns that write, send, and optimize themselves. Handles customer follow-ups, lead nurturing, and personalized outreach automatically.</p>
               <Button asChild variant="outline" className="border-teal-600 text-teal-600 hover:bg-teal-50">
@@ -84,6 +90,11 @@ function HomePage() {
 
             {/* Marketing Automation Agent */}
             <div className="bg-slate-50 p-8 rounded-lg text-center">
+              <div className="flex justify-center mb-6">
+                <div className="w-20 h-20 bg-teal-100 rounded-full flex items-center justify-center">
+                  <Megaphone className="w-10 h-10 text-teal-600" />
+                </div>
+              </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Marketing Automation Agent</h3>
               <p className="text-slate-600 mb-6">Complete marketing campaigns that run themselves. From social media posts to ad optimization, this agent handles your entire marketing pipeline.</p>
               <Button asChild variant="outline" className="border-teal-600 text-teal-600 hover:bg-teal-50">
@@ -93,6 +104,11 @@ function HomePage() {
 
             {/* Customer Service Agent */}
             <div className="bg-slate-50 p-8 rounded-lg text-center">
+              <div className="flex justify-center mb-6">
+                <div className="w-20 h-20 bg-teal-100 rounded-full flex items-center justify-center">
+                  <Headphones className="w-10 h-10 text-teal-600" />
+                </div>
+              </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Customer Service Agent</h3>
               <p className="text-slate-600 mb-6">24/7 customer support that never sleeps. Handles inquiries, resolves issues, and escalates complex cases to your team when needed.</p>
               <Button asChild variant="outline" className="border-teal-600 text-teal-600 hover:bg-teal-50">
@@ -102,6 +118,11 @@ function HomePage() {
 
             {/* Data Analysis Agent */}
             <div className="bg-slate-50 p-8 rounded-lg text-center">
+              <div className="flex justify-center mb-6">
+                <div className="w-20 h-20 bg-teal-100 rounded-full flex items-center justify-center">
+                  <BarChart3 className="w-10 h-10 text-teal-600" />
+                </div>
+              </div>
               <h3 className="text-2xl font-bold text-slate-900 mb-4">Data Analysis Agent</h3>
               <p className="text-slate-600 mb-6">Transform your business data into actionable insights. Automatically generates reports, identifies trends, and provides strategic recommendations.</p>
               <Button asChild variant="outline" className="border-teal-600 text-teal-600 hover:bg-teal-50">
