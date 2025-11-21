@@ -10,6 +10,7 @@ import TermsOfService from './components/TermsOfService'
 import PrivacyPolicy from './components/PrivacyPolicy'
 import LinkedInAutomationPage from './pages/LinkedInAutomationPage'
 import EmailMarketingPage from './pages/EmailMarketingPage'
+import AssessmentPage from './pages/AssessmentPage'
 import './App.css'
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/services/linkedin-automation" element={<LinkedInAutomationPage />} />
           <Route path="/services/email-marketing-guide" element={<EmailMarketingPage />} />
+          <Route path="/assessment" element={<AssessmentPage />} />
         </Routes>
       </main>
     </Router>
