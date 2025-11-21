@@ -83,7 +83,9 @@ function HowItWorksPage() {
                 <h3 className="text-2xl font-bold text-slate-900 mb-2">Westley Sweetman</h3>
                 <p className="text-teal-600 font-semibold mb-3">Co-Director | IT Services & Operations Expert</p>
                 <p className="text-slate-700">
-                  With over 25 years of IT industry experience, Westley is a seasoned expert in SME operations. He founded the successful IT support company Sweetbyte in 2005, growing it through a reputation for strategic thinking and service excellence. Westley treats every client's IT environment as if it were his own, ensuring practical, efficient solutions that solve real-world business challenges.
+                  Westley has built and grown a successful business in the IT Services and support sector. 
+                  He knows everything that SMEs require to run efficiently and understands the operational 
+                  challenges business owners face every day. With over 25 years of industry experience, Westley founded Sweetbyte in 2005 and has grown it through a reputation for strategic thinking and treating every client's IT as if it were his own.
                 </p>
                 <a href="https://www.sweetbyte.co.uk" target="_blank" rel="noopener noreferrer" className="text-teal-600 font-semibold hover:underline mt-2 inline-block">sweetbyte.co.uk</a>
               </div>
@@ -92,7 +94,9 @@ function HowItWorksPage() {
                 <h3 className="text-2xl font-bold text-slate-900 mb-2">John Wicks</h3>
                 <p className="text-teal-600 font-semibold mb-3">Co-Director | Sales & Marketing Veteran</p>
                 <p className="text-slate-700">
-                  A 40-year veteran of sales and marketing, John is an expert at driving business growth. He knows that effective marketing isn't just about theory—it's about getting results. John specializes in creating practical, real-world email marketing and social media campaigns that boost engagement and generate new customers. His hands-on approach helps SMEs unlock their true growth potential.
+                  With 40 years of experience in sales and marketing, John understands the woes and pains 
+                  SMEs face when trying to boost their social presence and gain new customers. His expertise 
+                  helps businesses unlock growth opportunities. John specializes in practical, real-world email marketing campaigns that get results, not just theory—his hands-on approach drives genuine business growth.
                 </p>
                 <a href="https://www.linkedin.com/feed/update/urn:li:activity:7390129417341251584?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7390129417341251584%2C7390417376204410880%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287390417376204410880%2Curn%3Ali%3Aactivity%3A7390129417341251584%29" target="_blank" rel="noopener noreferrer" className="text-teal-600 font-semibold hover:underline mt-2 inline-block">LinkedIn Profile</a>
               </div>
