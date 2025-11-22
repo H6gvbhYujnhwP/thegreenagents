@@ -240,15 +240,15 @@ function MarketingAutomationPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-teal-600 to-teal-700">
+      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-teal-600 to-teal-700">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Stop Juggling, Start Growing</h2>
-          <p className="text-xl text-teal-100 mb-10">Ready to get your marketing off your to-do list for good? Let our AI Marketing Automation Agent handle the heavy lifting so you can focus on what you do best: running your business. Book your free, no-obligation discovery session today and see how much time and money you could save.</p>
-          <div className="flex justify-center gap-4">
-            <Button asChild size="lg" className="bg-white text-teal-600 hover:bg-slate-100 px-8 py-6 text-lg">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-6">Stop Juggling, Start Growing</h2>
+          <p className="text-lg sm:text-xl text-teal-100 mb-6 sm:mb-8 lg:mb-10">Ready to get your marketing off your to-do list for good? Let our AI Marketing Automation Agent handle the heavy lifting so you can focus on what you do best: running your business. Book your free, no-obligation discovery session today and see how much time and money you could save.</p>
+          <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4">
+            <Button asChild size="lg" className="bg-white text-teal-600 hover:bg-slate-100 px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg w-full sm:w-auto touch-manipulation">
               <Link to="/contact">Get Started Today</Link>
             </Button>
-            <Button asChild size="lg" className="bg-white text-teal-600 hover:bg-slate-100 px-8 py-6 text-lg border-2 border-white">
+            <Button asChild size="lg" className="bg-white text-teal-600 hover:bg-slate-100 px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg border-2 border-white w-full sm:w-auto touch-manipulation">
               <Link to="/assessment">Free AI Readiness Assessment</Link>
             </Button>
           </div>
