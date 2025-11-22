@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { BarChart, CheckCircle, TrendingUp, Target, Zap } from 'lucide-react'
+import SEO from '../components/SEO'
 
 function AssessmentPage() {
   const [currentStep, setCurrentStep] = useState(1)
@@ -246,7 +247,13 @@ function AssessmentPage() {
     const recommendations = getRecommendations(score)
 
     return (
-      <div className="bg-white min-h-screen py-20">
+      <>
+        <SEO 
+          title="Your AI Readiness Results"
+          description="See your AI readiness score and get personalized recommendations for automating your UK SME business operations."
+          keywords="AI readiness assessment, business automation assessment, AI maturity score"
+        />
+        <div className="bg-white min-h-screen py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Results Header */}
           <div className="text-center mb-12">
@@ -362,6 +369,7 @@ function AssessmentPage() {
           )}
         </div>
       </div>
+      </>
     )
   }
 
@@ -369,7 +377,13 @@ function AssessmentPage() {
   const progress = (currentStep / questions.length) * 100
 
   return (
-    <div className="bg-white min-h-screen py-8 sm:py-12 lg:py-20">
+    <>
+      <SEO 
+        title="AI Readiness Scorecard - Free 60-Second Assessment"
+        description="Take our free 60-second AI readiness assessment and discover how AI automation can save you 10+ hours per week. Get personalized recommendations for your UK SME."
+        keywords="AI readiness test, business automation assessment, AI scorecard, automation readiness, AI maturity assessment"
+      />
+      <div className="bg-white min-h-screen py-8 sm:py-12 lg:py-20">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-6 sm:mb-8 lg:mb-12">
@@ -448,7 +462,8 @@ function AssessmentPage() {
           </Button>
         </div>
       </div>
-    </div>
+      </div>
+      </>
   )
 }
 

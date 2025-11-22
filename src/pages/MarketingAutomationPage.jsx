@@ -1,10 +1,31 @@
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/button.jsx'
 import { Link } from 'react-router-dom'
 import { Megaphone, Share2, BarChart3, Calendar, Sparkles, Target } from 'lucide-react'
+import SEO from '../components/SEO'
 
 function MarketingAutomationPage() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Marketing Automation Agent",
+    "description": "Complete AI-powered marketing campaigns that run themselves. From social media posts to ad optimization, your entire marketing pipeline on autopilot for UK SMEs.",
+    "provider": {
+      "@type": "Organization",
+      "name": "The Green Agents",
+      "url": "https://thegreenagents.com"
+    },
+    "areaServed": "GB",
+    "serviceType": "Marketing Automation"
+  }
+
   return (
     <div className="bg-white">
+      <SEO 
+        title="Marketing Automation Agent - AI Marketing for SMEs"
+        description="Complete AI-powered marketing campaigns that run themselves. From social media posts to ad optimization, your entire marketing pipeline on autopilot. Save 10+ hours weekly."
+        keywords="marketing automation UK, AI marketing, automated marketing campaigns, social media automation, ad optimization, marketing automation for SMEs, automated social posts"
+        structuredData={structuredData}
+      />
       {/* Hero Section */}
       <section className="py-12 sm:py-20 lg:py-32 bg-gradient-to-br from-slate-50 to-teal-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

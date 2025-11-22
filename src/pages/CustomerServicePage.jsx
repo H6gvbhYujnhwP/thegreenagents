@@ -1,10 +1,31 @@
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/button.jsx'
 import { Link } from 'react-router-dom'
 import { Headphones, MessageSquare, Clock, Users, Zap, CheckCircle } from 'lucide-react'
+import SEO from '../components/SEO'
 
 function CustomerServicePage() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Customer Service Agent",
+    "description": "24/7 AI-powered customer support that never sleeps. Handle inquiries instantly, resolve issues efficiently, and delight your customers on autopilot.",
+    "provider": {
+      "@type": "Organization",
+      "name": "The Green Agents",
+      "url": "https://thegreenagents.com"
+    },
+    "areaServed": "GB",
+    "serviceType": "Customer Service Automation"
+  }
+
   return (
     <div className="bg-white">
+      <SEO 
+        title="Customer Service Agent - 24/7 AI Support"
+        description="24/7 AI-powered customer support that never sleeps. Handle inquiries instantly, resolve issues efficiently, and delight your customers on autopilot. Less than 30 second response time."
+        keywords="AI customer service UK, automated customer support, 24/7 customer service, AI chatbot, customer service automation, automated support tickets"
+        structuredData={structuredData}
+      />
       {/* Hero Section */}
       <section className="py-12 sm:py-20 lg:py-32 bg-gradient-to-br from-slate-50 to-teal-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

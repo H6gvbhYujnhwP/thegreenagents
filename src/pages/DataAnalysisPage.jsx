@@ -1,10 +1,31 @@
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/button.jsx'
 import { Link } from 'react-router-dom'
 import { BarChart3, TrendingUp, PieChart, Activity, Target, Zap } from 'lucide-react'
+import SEO from '../components/SEO'
 
 function DataAnalysisPage() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Data Analysis Agent",
+    "description": "Transform your business data into actionable insights with AI. Automatically generate reports, identify trends, and make data-driven decisions with confidence.",
+    "provider": {
+      "@type": "Organization",
+      "name": "The Green Agents",
+      "url": "https://thegreenagents.com"
+    },
+    "areaServed": "GB",
+    "serviceType": "Data Analysis Automation"
+  }
+
   return (
     <div className="bg-white">
+      <SEO 
+        title="Data Analysis Agent - AI Business Intelligence"
+        description="Transform your business data into actionable insights with AI. Automatically generate reports, identify trends, and make data-driven decisions with confidence. Real-time analytics."
+        keywords="AI data analysis UK, business intelligence automation, automated reporting, data analytics, AI insights, business analytics automation, automated data analysis"
+        structuredData={structuredData}
+      />
       {/* Hero Section */}
       <section className="py-12 sm:py-20 lg:py-32 bg-gradient-to-br from-slate-50 to-teal-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

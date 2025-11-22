@@ -1,10 +1,35 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@/components/ui/button.jsx";
 import { Link } from "react-router-dom";
 import { Target, Sparkles, Mic, FileText, Calendar, Share2, TrendingUp, Users } from "lucide-react";
+import SEO from '../components/SEO';
 
 function LinkedInAutomationPage() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "LinkedIn Automation - Social Echo",
+    "description": "Automate your LinkedIn presence with AI. Build your brand, connect with ideal clients, and generate leads on autopilot. 80% increase in lead consistency.",
+    "provider": {
+      "@type": "Organization",
+      "name": "The Green Agents",
+      "url": "https://thegreenagents.com"
+    },
+    "areaServed": "GB",
+    "serviceType": "LinkedIn Automation",
+    "offers": {
+      "@type": "Offer",
+      "description": "Free trial available, no credit card required"
+    }
+  }
+
   return (
     <div className="bg-white">
+      <SEO 
+        title="LinkedIn Automation - Social Echo AI"
+        description="Automate your LinkedIn presence with AI. Build your brand, connect with ideal clients, and generate leads on autopilot. 80% increase in lead consistency within 90 days."
+        keywords="LinkedIn automation UK, LinkedIn AI, automated LinkedIn posting, LinkedIn lead generation, Social Echo, LinkedIn content automation, LinkedIn marketing automation"
+        structuredData={structuredData}
+      />
       {/* Hero Section */}
       <section className="py-12 sm:py-20 lg:py-32 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

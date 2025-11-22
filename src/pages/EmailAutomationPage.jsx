@@ -1,10 +1,35 @@
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/button.jsx'
 import { Link } from 'react-router-dom'
 import { Mail, Clock, Target, TrendingUp, CheckCircle, Zap } from 'lucide-react'
+import SEO from '../components/SEO'
 
 function EmailAutomationPage() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Email Automation Agent",
+    "description": "Intelligent email campaigns that write, send, and optimize themselves. AI-powered email marketing automation for UK SMEs. Never miss a follow-up, never lose a lead.",
+    "provider": {
+      "@type": "Organization",
+      "name": "The Green Agents",
+      "url": "https://thegreenagents.com"
+    },
+    "areaServed": "GB",
+    "serviceType": "Email Marketing Automation",
+    "offers": {
+      "@type": "Offer",
+      "description": "£30-£40 return for every £1 spent on email automation"
+    }
+  }
+
   return (
     <div className="bg-white">
+      <SEO 
+        title="Email Automation Agent - AI Email Marketing"
+        description="Intelligent email campaigns that write, send, and optimize themselves. AI-powered email marketing automation for UK SMEs. Get £30-£40 return for every £1 spent. Never miss a follow-up."
+        keywords="email automation UK, AI email marketing, automated email campaigns, email marketing automation, lead nurturing automation, email follow-up automation, personalized email automation"
+        structuredData={structuredData}
+      />
       {/* Hero Section */}
       <section className="py-12 sm:py-20 lg:py-32 bg-gradient-to-br from-slate-50 to-teal-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

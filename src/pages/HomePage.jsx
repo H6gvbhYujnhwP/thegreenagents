@@ -1,10 +1,33 @@
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/button.jsx'
 import { Link } from 'react-router-dom'
 import { Mail, Megaphone, Headphones, BarChart3 } from 'lucide-react'
+import SEO from '../components/SEO'
 
 function HomePage() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "The Green Agents",
+    "description": "AI-powered marketing automation and business process automation for UK SMEs. Email automation, social media management, customer service, and data analysis agents.",
+    "url": "https://thegreenagents.com",
+    "telephone": "+44-XXX-XXX-XXXX",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "GB"
+    },
+    "areaServed": "GB",
+    "serviceType": ["AI Marketing Automation", "Email Automation", "Social Media Automation", "Customer Service Automation", "Data Analysis"],
+    "priceRange": "££"
+  }
+
   return (
     <div className="bg-white">
+      <SEO 
+        title="AI Marketing Automation for UK SMEs"
+        description="Deploy AI-powered marketing agents for email automation, social media management, and customer service. Get 10+ hours back every week. Free consultation for UK SMEs."
+        keywords="AI marketing automation, email automation UK, LinkedIn automation, marketing automation for SMEs, AI business automation, automated email campaigns, social media automation, customer service automation, data analysis automation, AI agents for business"
+        structuredData={structuredData}
+      />
       {/* Hero Section */}
       <section className="py-12 sm:py-20 lg:py-32 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
