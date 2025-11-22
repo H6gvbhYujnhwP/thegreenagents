@@ -369,16 +369,16 @@ function AssessmentPage() {
   const progress = (currentStep / questions.length) * 100
 
   return (
-    <div className="bg-white min-h-screen py-20">
+    <div className="bg-white min-h-screen py-8 sm:py-12 lg:py-20">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-slate-900 mb-4">AI Readiness Assessment</h1>
-          <p className="text-xl text-slate-600">Discover how AI automation can transform your business in just 60 seconds</p>
+        <div className="text-center mb-6 sm:mb-8 lg:mb-12">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 mb-2 sm:mb-4">AI Readiness Assessment</h1>
+          <p className="text-base sm:text-lg lg:text-xl text-slate-600">Discover how AI automation can transform your business in just 60 seconds</p>
         </div>
 
         {/* Progress Bar */}
-        <div className="mb-8">
+        <div className="mb-4 sm:mb-6 lg:mb-8">
           <div className="flex justify-between text-sm text-slate-600 mb-2">
             <span>Question {currentStep} of {questions.length}</span>
             <span>{Math.round(progress)}% Complete</span>
@@ -392,19 +392,19 @@ function AssessmentPage() {
         </div>
 
         {/* Question Card */}
-        <div className="bg-slate-50 rounded-lg p-8 mb-8">
+        <div className="bg-slate-50 rounded-lg p-4 sm:p-6 lg:p-8 mb-4 sm:mb-6 lg:mb-8">
           <div className="mb-2">
-            <span className="inline-block px-3 py-1 bg-teal-100 text-teal-700 rounded-full text-sm font-medium mb-4">
+            <span className="inline-block px-3 py-1 bg-teal-100 text-teal-700 rounded-full text-sm font-medium mb-3 sm:mb-4">
               {currentQuestion.category}
             </span>
           </div>
-          <h2 className="text-2xl font-bold text-slate-900 mb-6">{currentQuestion.question}</h2>
-          <div className="space-y-3">
+          <h2 className="text-xl sm:text-2xl font-bold text-slate-900 mb-4 sm:mb-6">{currentQuestion.question}</h2>
+          <div className="space-y-2 sm:space-y-3">
             {currentQuestion.options.map((option) => (
               <button
                 key={option.value}
                 onClick={() => handleAnswer(currentQuestion.id, option.value)}
-                className={`w-full text-left px-6 py-4 rounded-lg border-2 transition-all ${
+                className={`w-full text-left px-4 sm:px-6 py-3 sm:py-4 rounded-lg border-2 transition-all ${
                   answers[currentQuestion.id] === option.value
                     ? 'border-teal-600 bg-teal-50 text-teal-900'
                     : 'border-slate-200 bg-white hover:border-teal-300'

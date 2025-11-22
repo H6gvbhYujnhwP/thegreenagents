@@ -6,21 +6,21 @@ function EmailAutomationPage() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="py-20 lg:py-32 bg-gradient-to-br from-slate-50 to-teal-50">
+      <section className="py-12 sm:py-20 lg:py-32 bg-gradient-to-br from-slate-50 to-teal-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div>
-              <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-slate-900 mb-4 sm:mb-6">
                 Email Automation Agent
               </h1>
-              <p className="text-xl text-slate-600 mb-8">
+              <p className="text-lg sm:text-xl text-slate-600 mb-6 sm:mb-8">
                 Intelligent email campaigns that write, send, and optimize themselves. Never miss a follow-up, never lose a lead.
               </p>
-              <div className="flex gap-4">
-                <Button asChild className="bg-teal-600 hover:bg-teal-700 text-white px-8 py-6 text-lg">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                <Button asChild className="bg-teal-600 hover:bg-teal-700 text-white px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg w-full sm:w-auto touch-manipulation">
                   <Link to="/contact">Get Started</Link>
                 </Button>
-                <Button asChild variant="outline" className="px-8 py-6 text-lg border-teal-600 text-teal-600 hover:bg-teal-50">
+                <Button asChild variant="outline" className="px-6 sm:px-8 py-5 sm:py-6 text-base sm:text-lg border-teal-600 text-teal-600 hover:bg-teal-50 w-full sm:w-auto touch-manipulation">
                   <Link to="/assessment">Free Assessment</Link>
                 </Button>
               </div>
