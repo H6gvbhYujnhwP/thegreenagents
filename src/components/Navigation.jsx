@@ -52,7 +52,7 @@ function Navigation() {
         <div className="flex justify-between items-center h-20 lg:h-24">
           <div className="flex items-center">
             <Link to="/">
-              <img src={tgaLogo} alt="The Green Agents" className="w-48 lg:w-80 h-auto" />
+              <img src={tgaLogo} alt="The Green Agents" className="w-40 sm:w-48 lg:w-80 h-auto" />
             </Link>
           </div>
 
