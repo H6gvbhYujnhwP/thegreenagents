@@ -15,6 +15,7 @@ import WorkTrackrPage from './pages/WorkTrackrPage'
 import AssessmentPage from './pages/AssessmentPage'
 import HowItWorksPage from './pages/HowItWorksPage'
 import WhyChooseUsPage from './pages/WhyChooseUsPage'
+import GrowthServicesPage from './pages/GrowthServicesPage'
 import './App.css'
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
           <Route path="/assessment" element={<AssessmentPage />} />
           <Route path="/how-it-works" element={<HowItWorksPage />} />
             <Route path="/why-us" element={<WhyChooseUsPage />} />
+          <Route path="/growth-services" element={<GrowthServicesPage />} />
         </Routes>
       </main>
       </Router>
