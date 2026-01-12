@@ -195,9 +195,9 @@ export default function GrowthServicesPage() {
             </p>
             <div className="grid md:grid-cols-3 gap-8">
               {[
-                { name: "Starter", price: "£400", setup: "£1,500", features: ["Email campaigns", "Social media (2x/week)", "Basic CRM", "Monthly reporting"], highlight: false },
-                { name: "Growth", price: "£650", setup: "£1,500", features: ["Everything in Starter", "AI sales agents", "Website build", "Advanced CRM", "Priority support"], highlight: true },
-                { name: "Scale", price: "£800", setup: "£1,500", features: ["Everything in Growth", "Dedicated account manager", "Advanced analytics", "Custom integrations", "Quarterly reviews"], highlight: false },
+                { name: "Starter", price: "£400", setup: "£1,500", features: ["One email outreach per month", "One social post per week", "Platform of choice", "Email support", "Monthly reporting"], highlight: false },
+                { name: "Growth", price: "£650", setup: "£1,500", features: ["One email every two weeks", "Landing page build", "Two social posts per week", "Priority support", "Monthly reporting"], highlight: true },
+                { name: "Scale", price: "Custom", setup: "£1,500", features: ["Everything in Growth", "Advanced analytics", "Personal account manager", "Monthly strategy reviews", "One-on-one strategy calls"], highlight: false },
               ].map((tier, idx) => (
                 <div
                   key={idx}
