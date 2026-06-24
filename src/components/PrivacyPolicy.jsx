@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
             Back to Website
           </Button>
           <h1 className="text-4xl font-bold text-slate-900 mb-4">Privacy Policy</h1>
-          <p className="text-slate-600">Last updated: January 18, 2025</p>
+          <p className="text-slate-600">Last updated: 24 June 2026</p>
         </div>
 
         <div className="prose prose-slate max-w-none">
@@ -91,30 +91,43 @@ export default function PrivacyPolicy() {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-slate-900 mb-4">7. Cookies and Tracking</h2>
+            <h2 className="text-2xl font-semibold text-slate-900 mb-4">7. Cookies, tracking and the Meta Pixel</h2>
             <p className="text-slate-700 mb-4">
-              Our website may use cookies and similar tracking technologies to enhance your browsing experience and analyze website traffic. You can control cookie settings through your browser preferences.
+              Our website uses cookies and similar tracking technologies to enhance your browsing experience and analyse website traffic. You can control cookie settings through your browser preferences.
+            </p>
+            <p className="text-slate-700 mb-4">
+              On some of our pages, and on pages we operate on behalf of our clients, we use the Meta Pixel and the Meta Conversions API. These tools allow us and Meta Platforms, Inc. ("Meta") to measure the effectiveness of advertising, understand the actions people take, and show more relevant ads on Facebook and Instagram. The information shared with Meta may include your interactions with the website (such as pages viewed or forms submitted) and identifiers such as your IP address. This information is processed by Meta in accordance with Meta's own Data Policy.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-slate-900 mb-4">8. International Data Transfers</h2>
+            <h2 className="text-2xl font-semibold text-slate-900 mb-4">8. Facebook and Meta Lead Ads</h2>
+            <p className="text-slate-700 mb-4">
+              We run advertising campaigns on Facebook and Instagram, including Lead Ads that use Meta's instant forms. If you submit one of these forms, the information you provide — which may include your name, email address, phone number and answers to any questions on the form — is collected through Meta's platform and made available to us so that we (or the client we are advertising on behalf of) can respond to your enquiry, provide the information or service you requested, and follow up with you.
+            </p>
+            <p className="text-slate-700 mb-4">
+              Information submitted through a Lead Ad is handled in line with this Privacy Policy. It is also processed by Meta under Meta's own terms and Data Policy. We do not use this information for any purpose other than the one for which you provided it, and we do not sell it.
+            </p>
+          </section>
+
+          <section className="mb-8">
+            <h2 className="text-2xl font-semibold text-slate-900 mb-4">9. International Data Transfers</h2>
             <p className="text-slate-700 mb-4">
               Your information may be transferred to and processed in countries other than your own. We ensure appropriate safeguards are in place to protect your information in accordance with applicable data protection laws.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-slate-900 mb-4">9. Changes to This Policy</h2>
+            <h2 className="text-2xl font-semibold text-slate-900 mb-4">10. Changes to This Policy</h2>
             <p className="text-slate-700 mb-4">
               We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the "Last updated" date.
             </p>
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-slate-900 mb-4">10. Contact Us</h2>
+            <h2 className="text-2xl font-semibold text-slate-900 mb-4">11. Contact us and data deletion requests</h2>
             <p className="text-slate-700 mb-4">
-              If you have any questions about this Privacy Policy or our data practices, please contact us at:
+              If you have any questions about this Privacy Policy or our data practices, or if you would like us to access, correct or delete the personal information we hold about you — including any information you submitted through a Facebook or Instagram Lead Ad — please contact us using the details below. We will action verified deletion requests within 30 days.
             </p>
             <p className="text-slate-700">
               Email: privacy@thegreenagents.com<br />
